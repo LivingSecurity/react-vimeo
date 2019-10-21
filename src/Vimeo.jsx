@@ -157,6 +157,7 @@ export default class extends React.Component {
         this._player,
         playerOrigin === '*' ? origin : playerOrigin
       );
+      data.player = this._player;
       return onReady(data);
     }
     if (!data.event) {
